@@ -1,0 +1,32 @@
+// Auth Actions
+
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS"
+export const LOGIN_SCREEN  = "LOGIN_SCREEN"
+export const SIGNUP_SCREEN = "SIGNUP_SCREEN"
+export const FORGOT_PASSWORD_SCREEN = "FORGOT_PASSWORD_SCREEN"
+export const FORGOT_OTP_SCREEN = "FORGOT_OTP_SCREEN"
+export const VERIFY_EMAIL_SCREEN = "VERIFY_EMAIL_SCREEN"
+export const AUTH_TOKEN_SET = "AUTH_TOKEN_SET"
+export const CALL_RESPONSE = "CALL_RESPONSE"
+export const UPLOAD_PROFILE_PIC = "UPLOAD_PROFILE_PIC"
+export const NOTIFY = "NOTIFY"
+export const TUITORS = "TUITORS"
+export const STUIDENTS = "STUIDENTS"
+export const PARENTS = "PARENTS"
+
+
+// Auth Api Actions
+export const LOGIN_RESPONSE = "LOGIN_RESPONSE"
+export const LOGOUT_RESPONSE = "LOGOUT_RESPONSE"
+export const LOGOUT = "LOGOUT"
+
+//Profile
+export const PROFILE_DATA_SET = "PROFILE_DATA_SET"
+export const PROFILE_DATA_UPDATE = "PROFILE_DATA_UPDATE"
+
+//Blogs
+export const BLOGS_DATA_GET = "BLOGS_DATA_GET"
+
+//Products
+export const PRODUCTS_DATA_GET = "PRODUCTS_DATA_GET"
+export const CATS_DATA_GET = "CATS_DATA_GET"
