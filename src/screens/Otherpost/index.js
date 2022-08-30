@@ -69,7 +69,8 @@ const Otherpost = () => {
         <div className='d-flex flex-column justify-content-center align-items-center'>
             <img src={instaImg}
                 style={{
-                    borderRadius: '2rem'
+                    borderRadius: '2rem',
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
                 }}
             />
             <div style={{
@@ -77,6 +78,7 @@ const Otherpost = () => {
                 borderRadius: '2rem',
                 color: 'white',
                 padding: '2rem',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
             }}>
                 <div
                     style={{
@@ -105,7 +107,7 @@ const Otherpost = () => {
             <div
                 class="form-group d-flex flex-column justify-content-between"
                 style={{
-                    boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`,
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
                     background: 'white',
                     borderRadius: '2rem',
                     width: '370px'

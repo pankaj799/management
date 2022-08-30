@@ -83,7 +83,7 @@ const Post = () => {
                                 background: "#f3f0a3",
                                 height: '40px',
                                 width: '40px',
-                                boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
                             }}
                             iconStyle={{
                                 width: '40px'
@@ -91,9 +91,15 @@ const Post = () => {
                             // createdAt="2016-09-12 10:06 PM"
                             icon={<img src={imggallImg} style={{ width: '20px', height: '20px' }} />}
                         >
-                            <img src={instaImg} style={{ width: '200px', height: 'auto' }} />
-                            <img src={instaImg} style={{ width: '200px', height: 'auto' }} />
-                            <img src={instaImg} style={{ width: '200px', height: 'auto' }} />
+                            <div 
+                            style={{
+                                background : 'red'
+                            }}
+                            >
+                                <img src={instaImg} style={{ width: '200px', height: 'auto' }} />
+                                <img src={instaImg} style={{ width: '200px', height: 'auto' }} />
+                                <img src={instaImg} style={{ width: '200px', height: 'auto' }} />
+                            </div>
                         </TimelineEvent>
                         <TimelineEvent
                             // onClick={() => alert("clicked")}
@@ -102,7 +108,7 @@ const Post = () => {
                                 background: "#f4d09a",
                                 height: '40px',
                                 width: '40px',
-                                boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
                             }}
                             iconStyle={{
                                 width: '40px'
@@ -130,7 +136,7 @@ const Post = () => {
                                 background: "#eea389",
                                 height: '40px',
                                 width: '40px',
-                                boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
                             }}
                             iconStyle={{
                                 width: '40px'
@@ -142,10 +148,10 @@ const Post = () => {
                                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
                                 </div>
                                 <div
-                                className='d-flex justify-content-between' 
-                                style={{
-                                    padding : '2rem 0'
-                                }}
+                                    className='d-flex justify-content-between'
+                                    style={{
+                                        padding: '2rem 0'
+                                    }}
                                 >
                                     <Button style={{
                                         background: '#93CCB5',
@@ -165,7 +171,7 @@ const Post = () => {
                                 background: "#f4d09a",
                                 height: '40px',
                                 width: '40px',
-                                boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
                             }}
                             iconStyle={{
                                 width: '40px'
@@ -193,7 +199,7 @@ const Post = () => {
                                 background: "#f4d09a",
                                 height: '40px',
                                 width: '40px',
-                                boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
                             }}
                             iconStyle={{
                                 width: '40px'

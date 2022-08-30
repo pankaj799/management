@@ -355,25 +355,27 @@ body {
 }
 
 .roadmap-main {
-    background-color: transparent;
+    background-color: transparent; 
 }
 
 .roadmap-main-adj {
-    border: 5px solid darkslategrey;
+    border-top: 5px solid #fbb507;
     /* border: 5px solid; */
     /* border-image: linear-gradient(to right, grey 25%, yellow 25%, yellow 50%, red 50%, red 75%, teal 75%) 5; */
-    border-radius:  0px 100px 0px 0px;
-    border-left: none;
-    border-bottom: none;
+    /* border-radius:  0px 100px 0px 0px; */
+    /* border-left: none; */
+    /* border-right: none; */
+    /* border-right: none; */
+    /* border-bottom: none; */
 }
 
 .roadmap-main-adj-two{
-    border: 5px solid darkslategrey;
+    border-top: 5px solid #fbb507;
     /* border: 5px solid; */
     /* border-image: linear-gradient(to right, grey 25%, yellow 25%, yellow 50%, red 50%, red 75%, teal 75%) 5; */
-    border-radius: 100px 0px 100px 0px;
-    border-right: none;
-    border-bottom: none;
+    /* border-radius: 100px 0px 100px 0px; */
+    /* border-right: none;
+    border-bottom: none; */
 }
 
 .roadmap-main-one {
@@ -412,6 +414,7 @@ body {
 
 .roadmap-main-circle {
     background-color: #EA3C14;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -433,6 +436,7 @@ body {
 
 .roadmap-main-circle-two {
     background-color: #EA3C14;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     border-radius: 50%;
     width: 100px;
     height: 100px;

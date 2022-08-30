@@ -42,7 +42,7 @@ const Home = () => {
                             }}
                             style={{
                                 borderRadius: '50%',
-                                padding : '2rem',
+                                padding: '2rem',
                                 boxShadow: 'rgb(149 157 165 / 20%) 0px 8px 24px'
                             }}
                         />
@@ -115,590 +115,737 @@ const Home = () => {
             </Sider>
             <Layout style={{ marginBottom: '1rem' }} className="site-layout">
                 <Content className='d-flex flex-wrap p-4 align_main_home' style={{ background: '#F5F8F9' }} onClick={() => setCollapsed(!collapsed)}>
-                    <div className="contentSection p-3" style={{ width: '100%', margin: '1rem 5rem ' }}>
+                    <div className="contentSection p-3" style={{ width: '100%', margin: '1rem 1rem ' }}>
                         <br /><br />
                         <div class="row">
                             <div class="col-md-12">
                                 <div className='roadmap-main'>
-                                    <div className='d-flex justify-content-around roadmap-main-adj'>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: "#7ec9ff" }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(-42deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={agenda}
+                                    <div className='d-flex'
+                                        style={{
+                                            width: '100%'
+                                        }}
+                                    >
+                                        <div
+                                            style={{
+                                                width: '10%'
+                                            }}
+                                        ></div>
+                                        <div
+                                            className='d-flex justify-content-around roadmap-main-adj'
+                                            style={{
+                                                width: '80%'
+                                            }}
+                                        >
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: "#7ec9ff" }}>
+                                                        <img src={btnImg}
                                                             style={{
-                                                                width: '30px',
-                                                                height: '30px'
+                                                                width: "100%",
+                                                                transform: `rotateZ(-42deg)`
                                                             }}
                                                         />
-                                                        AGENDA
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Good Morning Dyna,
-                                                        Here is what's your
-                                                        Agenda Today! </p>
+                                                        <img src={userImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={agenda}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            AGENDA
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Good Morning Dyna,
+                                                            Here is what's your
+                                                            Agenda Today! </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#8EC3CE' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(-42deg)`
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={Vector}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            CONTACT
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Please send contact to Maya now.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#9C51D2' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(-42deg)`
+                                                            }}
+                                                        />
+                                                        <img src={userTwoImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={meetingImg}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            MEETING
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Maya Book a meeting in 60 min to discuss the contact.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#8EC3CE' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(-42deg)`
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={Vector}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                        CONTACT
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Please send contact to Maya now.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#9C51D2' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(-42deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userTwoImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={meetingImg}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                        MEETING
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Maya Book a meeting in 60 min to discuss the contact.</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div
+                                            style={{
+                                                width: '10%',
+                                                border: '5px solid #fbb507',
+                                                borderLeft: 'none',
+                                                borderRadius: '0px 5rem 5rem 0'
+                                            }}
+                                        ></div>
+
                                     </div>
-                                    <div className='d-flex justify-content-around roadmap-main-adj-two'>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#E94CA0' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(132deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userThreeImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p-two'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        E-MAIL
-                                                        <img
-                                                            src={MailBox}
+                                    <div className='d-flex'
+                                        style={{
+                                            width: '100%'
+                                        }}
+                                    >
+                                        <div
+                                            style={{
+                                                width: '10%',
+                                                border: '5px solid #fbb507',
+                                                borderRight: 'none',
+                                                borderRadius: '5rem 0rem 0rem 5rem'
+                                            }}
+                                        ></div>
+                                        <div
+                                            className='d-flex justify-content-around roadmap-main-adj-two'
+                                            style={{
+                                                width: '80%'
+                                            }}
+                                        >
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#E94CA0' }}>
+                                                        <img src={btnImg}
                                                             style={{
-                                                                width: '30px',
-                                                                height: '30px'
+                                                                width: "100%",
+                                                                transform: `rotateZ(132deg)`
                                                             }}
                                                         />
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Please reply to Eva’s Email Now</p>
+                                                        <img src={userThreeImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p-two'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            E-MAIL
+                                                            <img
+                                                                src={MailBox}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Please reply to Eva’s Email Now</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#FCC84B' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(132deg)`
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p-two'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            APPROVE
+                                                            <img
+                                                                src={Stamp}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Time too approve the invoice</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#F18361' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(132deg)`
+                                                            }}
+                                                        />
+                                                        <img src={userThreeImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p-two'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            E-MAGZINE
+                                                            <img
+                                                                src={userFourImg}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Emm just subscribed to your E-Magzine</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#FCC84B' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(132deg)`
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p-two'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        APPROVE
-                                                        <img
-                                                            src={Stamp}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Time too approve the invoice</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#F18361' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(132deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userThreeImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p-two'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        E-MAGZINE
-                                                        <img
-                                                            src={userFourImg}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Emm just subscribed to your E-Magzine</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div
+                                            style={{
+                                                width: '10%'
+                                            }}
+                                        ></div>
                                     </div>
-                                    <div className='d-flex justify-content-around roadmap-main-adj'>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#548DBF' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(-42deg)`
-                                                        }}
-                                                    />
-                                                    <img src={talesImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={videoImg}
+                                    <div className='d-flex'
+                                        style={{
+                                            width: '100%'
+                                        }}
+                                    >
+                                        <div
+                                            style={{
+                                                width: '10%'
+                                            }}
+                                        ></div>
+                                        <div
+                                            className='d-flex justify-content-around roadmap-main-adj'
+                                            style={{
+                                                width: '80%'
+                                            }}
+                                        >
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#548DBF' }}>
+                                                        <img src={btnImg}
                                                             style={{
-                                                                width: '30px',
-                                                                height: '30px'
+                                                                width: "100%",
+                                                                transform: `rotateZ(-42deg)`
                                                             }}
                                                         />
-                                                        Meeting
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Meeting with Maya in 15 minutes</p>
+                                                        <img src={talesImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={videoImg}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            Meeting
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Meeting with Maya in 15 minutes</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#C4DC4B' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(-42deg)`
+                                                            }}
+                                                        />
+                                                        <img src={userTwoImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={agenda}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            CONTACT
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Congrats Dyna! Maya
+                                                            Accepted & Signed the contract</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#DB4044' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(-42deg)`
+                                                            }}
+                                                        />
+                                                        <img src={userImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={clockImg}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            LUNCH
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>It’s time to treat yourself with a healthy Lunch to celebrate your hardwork so far!</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#C4DC4B' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(-42deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userTwoImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={agenda}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                        CONTACT
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Congrats Dyna! Maya
-                                                        Accepted & Signed the contract</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#DB4044' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(-42deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={clockImg}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                        LUNCH
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>It’s time to treat yourself with a healthy Lunch to celebrate your hardwork so far!</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div
+                                            style={{
+                                                width: '10%',
+                                                border: '5px solid #fbb507',
+                                                borderLeft: 'none',
+                                                borderRadius: '0px 5rem 5rem 0'
+                                            }}
+                                        ></div>
+
                                     </div>
-                                    <div className='d-flex justify-content-around roadmap-main-adj-two'>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#A553DD' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(132deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p-two '>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={agenda}
+                                    <div className='d-flex'
+                                        style={{
+                                            width: '100%'
+                                        }}
+                                    >
+                                        <div
+                                            style={{
+                                                width: '10%',
+                                                border: '5px solid #fbb507',
+                                                borderRight: 'none',
+                                                borderRadius: '5rem 0rem 0rem 5rem'
+                                            }}
+                                        ></div>
+                                        <div
+                                            className='d-flex justify-content-around roadmap-main-adj-two'
+                                            style={{
+                                                width: '80%'
+                                            }}
+                                        >
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#A553DD' }}>
+                                                        <img src={btnImg}
                                                             style={{
-                                                                width: '30px',
-                                                                height: '30px'
+                                                                width: "100%",
+                                                                transform: `rotateZ(132deg)`
                                                             }}
                                                         />
-                                                        AGENDA
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Good Morning Dyna,
-                                                        Here is what's your
-                                                        Agenda Today! </p>
+                                                        <img src={userImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p-two '>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={agenda}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            AGENDA
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Good Morning Dyna,
+                                                            Here is what's your
+                                                            Agenda Today! </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#8CDFE6' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(132deg)`
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p-two'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={Vector}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            CONTACT
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Please send contact to Maya now.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#92E2F4' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(132deg)`
+                                                            }}
+                                                        />
+                                                        <img src={userTwoImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p-two'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={meetingImg}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            MEETING
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Maya Book a meeting in 60 min to discuss the contact.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#8CDFE6' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(132deg)`
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p-two'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={Vector}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                        CONTACT
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Please send contact to Maya now.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#92E2F4' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(132deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userTwoImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p-two'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={meetingImg}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                        MEETING
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Maya Book a meeting in 60 min to discuss the contact.</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div
+                                            style={{
+                                                width: '10%'
+                                            }}
+                                        ></div>
                                     </div>
-                                    <div className='d-flex justify-content-around roadmap-main-adj'>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#DD8973' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(-42deg)`
-                                                        }}
-                                                    />
-                                                    <img src={talesImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        E-MAIL
-                                                        <img
-                                                            src={MailBox}
+                                    <div className='d-flex'
+                                        style={{
+                                            width: '100%'
+                                        }}
+                                    >
+                                        <div
+                                            style={{
+                                                width: '10%'
+                                            }}
+                                        ></div>
+                                        <div
+                                            className='d-flex justify-content-around roadmap-main-adj'
+                                            style={{
+                                                width: '80%'
+                                            }}
+                                        >
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#DD8973' }}>
+                                                        <img src={btnImg}
                                                             style={{
-                                                                width: '30px',
-                                                                height: '30px'
+                                                                width: "100%",
+                                                                transform: `rotateZ(-42deg)`
                                                             }}
                                                         />
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Please reply to Eva’s Email Now</p>
+                                                        <img src={talesImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            E-MAIL
+                                                            <img
+                                                                src={MailBox}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Please reply to Eva’s Email Now</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#E4C376' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(-42deg)`
+                                                            }}
+                                                        />
+                                                        <img src={userTwoImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            APPROVE
+                                                            <img
+                                                                src={Stamp}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Time too approve the invoice</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#D94396' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(-42deg)`
+                                                            }}
+                                                        />
+                                                        <img src={userImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            E-MAGZINE
+                                                            <img
+                                                                src={userFourImg}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Emm just subscribed to your E-Magzine</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#E4C376' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(-42deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userTwoImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        APPROVE
-                                                        <img
-                                                            src={Stamp}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Time too approve the invoice</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle d-flex justify-content-center align-items-center' style={{ backgroundColor: '#D94396' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(-42deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        E-MAGZINE
-                                                        <img
-                                                            src={userFourImg}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Emm just subscribed to your E-Magzine</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div
+                                            style={{
+                                                width: '10%',
+                                                border: '5px solid #fbb507',
+                                                borderLeft: 'none',
+                                                borderRadius: '0px 5rem 5rem 0'
+                                            }}
+                                        ></div>
+
                                     </div>
-                                    <div className='d-flex justify-content-around roadmap-main-adj-two'>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#EB4647' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(132deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p-two'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={videoImg}
+                                    <div className='d-flex'
+                                        style={{
+                                            width: '100%'
+                                        }}
+                                    >
+                                        <div
+                                            style={{
+                                                width: '10%',
+                                                // border: '5px solid #fbb507',
+                                                // borderRight: 'none',
+                                                // borderRadius: '5rem 0rem 0rem 5rem'
+                                            }}
+                                        ></div>
+                                        <div
+                                            className='d-flex justify-content-around roadmap-main-adj-two'
+                                            style={{
+                                                width: '80%'
+                                            }}
+                                        >
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#EB4647' }}>
+                                                        <img src={btnImg}
                                                             style={{
-                                                                width: '30px',
-                                                                height: '30px'
+                                                                width: "100%",
+                                                                transform: `rotateZ(132deg)`
                                                             }}
                                                         />
-                                                        Meeting
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Meeting with Maya in 15 minutes</p>
+                                                        <img src={userImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p-two'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={videoImg}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            Meeting
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Meeting with Maya in 15 minutes</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#D6EC69' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(132deg)`
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p-two'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={agenda}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            CONTACT
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>Congrats Dyna! Maya
+                                                            Accepted & Signed the contract</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='roadmap-main-one d-flex '>
+                                                <div className='d-flex roadmap-main-one-adj'>
+                                                    <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#5092C8' }}>
+                                                        <img src={btnImg}
+                                                            style={{
+                                                                width: "100%",
+                                                                transform: `rotateZ(132deg)`
+                                                            }}
+                                                        />
+                                                        <img src={userTwoImg}
+                                                            style={{
+                                                                width: "50%",
+                                                                position: 'absolute',
+                                                                left: '24px',
+                                                                top: '27px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <div className='roadmap-main-p-two'>
+                                                        <h3 style={{ fontSize: '18px' }}>
+                                                            <img
+                                                                src={clockImg}
+                                                                style={{
+                                                                    width: '30px',
+                                                                    height: '30px'
+                                                                }}
+                                                            />
+                                                            LUNCH
+                                                        </h3>
+                                                        <p style={{ width: '150px' }}>It’s time to treat yourself with a healthy Lunch to celebrate your hardwork so far!</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#D6EC69' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(132deg)`
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p-two'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={agenda}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                        CONTACT
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>Congrats Dyna! Maya
-                                                        Accepted & Signed the contract</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='roadmap-main-one d-flex '>
-                                            <div className='d-flex roadmap-main-one-adj'>
-                                                <div className='roadmap-main-circle-two d-flex justify-content-center align-items-center' style={{ backgroundColor: '#5092C8' }}>
-                                                    <img src={btnImg}
-                                                        style={{
-                                                            width: "100%",
-                                                            transform: `rotateZ(132deg)`
-                                                        }}
-                                                    />
-                                                    <img src={userTwoImg}
-                                                        style={{
-                                                            width: "50%",
-                                                            position: 'absolute',
-                                                            left: '24px',
-                                                            top: '27px'
-                                                        }}
-                                                    />
-                                                </div>
-                                                <div className='roadmap-main-p-two'>
-                                                    <h3 style={{ fontSize: '18px' }}>
-                                                        <img
-                                                            src={clockImg}
-                                                            style={{
-                                                                width: '30px',
-                                                                height: '30px'
-                                                            }}
-                                                        />
-                                                        LUNCH
-                                                    </h3>
-                                                    <p style={{ width: '150px' }}>It’s time to treat yourself with a healthy Lunch to celebrate your hardwork so far!</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div
+                                            style={{
+                                                width: '10%'
+                                            }}
+                                        ></div>
                                     </div>
                                 </div>
                             </div>
