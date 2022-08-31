@@ -8,12 +8,18 @@ import faceiconImg from "../../images/faceicon.png"
 import ImgiconImg from "../../images/Imgicon.png"
 import naviconImg from "../../images/navicon.png"
 import instaImg from "../../images/image 19.png"
+import TwitterImg from "../../images/Twitter.png"
+import InstagramImg from "../../images/Instagram.png"
+import YouTubeImg from "../../images/YouTube.png"
+import PinterestImg from "../../images/Pinterest.png"
+import LinkedInImg from "../../images/LinkedIn.png"
+import EllipseImg from "../../images/Ellipse 62.png"
 import imggallImg from "../../images/Image Gallery.png"
 import fbImg from "../../images/fb.png"
 import chatImg from "../../images/Chat Bubble.png"
 import playImg from "../../images/play.png"
 import playvid from "../../images/videoplayback.mp4"
-import { UserOutlined, BellOutlined, ClockCircleOutlined, FileAddOutlined } from '@ant-design/icons';
+import { HeartOutlined, BellOutlined, ClockCircleOutlined, FileAddOutlined } from '@ant-design/icons';
 import meetingImg from "../../images/Event Accepted Tentatively.png"
 import {
     Timeline,
@@ -66,7 +72,11 @@ const Otherpost = () => {
     });
 
     const MyCustomCard = ({ children }) => (
-        <div className='d-flex flex-column justify-content-center align-items-center'>
+        <div className='d-flex flex-column justify-content-center align-items-center'
+            style={{
+                padding: '0 4rem',
+            }}
+        >
             <img src={instaImg}
                 style={{
                     borderRadius: '2rem',
@@ -77,6 +87,7 @@ const Otherpost = () => {
                 background: "#243a6a",
                 borderRadius: '2rem',
                 color: 'white',
+                width: '400px',
                 padding: '2rem',
                 boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
             }}>
@@ -87,20 +98,40 @@ const Otherpost = () => {
                         color: 'white',
                         padding: '1rem'
                     }}>
-                    <div>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
                         <img />
-                        <p>Facbook feed</p>
+                        <p style={{
+                            fontWeight: '500'
+                        }}>Facbook feed</p>
                     </div>
-                    <p>
+                    <p style={{
+                        fontWeight: '200',
+                        fontStyle: 'italic',
+                        fontSize: '8px'
+                    }}>
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industry's
-                        standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make
-                        a type specimen book. It has survived not only five
-                        centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged
+                        standard dummy text ever since
                     </p>
-                    <p>27 Nov 2022</p>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <p
+                            style={{
+                                fontWeight: '200',
+                                fontStyle: 'italic',
+                                fontSize: '8px'
+                            }}
+                        >27 Nov 2022</p>
+                        <p><HeartOutlined
+                            style={{
+                                transform: 'translateY(-2px)',
+                                marginRight: '5px'
+                            }}
+                        />75</p>
+                    </div>
 
                 </div>
             </div>
@@ -127,6 +158,7 @@ const Otherpost = () => {
                         background: '#93CCB5',
                         border: "none",
                         color: 'white',
+                        borderRadius: '2rem',
                         boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
                     }}>Post</Button>
 
@@ -144,9 +176,743 @@ const Otherpost = () => {
                 borderRadius: '50%',
                 width: '40px',
                 left: '2px',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
                 height: '40px'
             }}>
             <img src={fbImg} style={{ width: '2rem' }} />
+            {/* <div 
+            style={{
+                width : '200px',
+                heigth : '5px',
+                backgroundCOlor : 'black'
+            }}
+            ></div> */}
+        </div>
+    )
+
+    const MyCustomCardOne = ({ children }) => (
+        <div className='d-flex flex-column justify-content-center align-items-center'
+            style={{
+                padding: '0 4rem',
+            }}>
+            <img src={instaImg}
+                style={{
+                    borderRadius: '2rem',
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+                }}
+            />
+            <div style={{
+                background: "#296a82",
+                borderRadius: '2rem',
+                width: '400px',
+                color: 'white',
+                padding: '2rem',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+            }}>
+                <div
+                    style={{
+                        background: "#00aced",
+                        borderRadius: '2rem',
+                        color: 'white',
+                        padding: '1rem'
+                    }}>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <img />
+                        <p style={{
+                            fontWeight: '500'
+                        }}>Tweeter feed</p>
+                    </div>
+                    <p style={{
+                        fontWeight: '200',
+                        fontStyle: 'italic',
+                        fontSize: '8px'
+                    }}>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since
+                    </p>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <p
+                            style={{
+                                fontWeight: '200',
+                                fontStyle: 'italic',
+                                fontSize: '8px'
+                            }}
+                        >27 Nov 2022</p>
+                        <p><HeartOutlined
+                            style={{
+                                transform: 'translateY(-2px)',
+                                marginRight: '5px'
+                            }}
+                        />75</p>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="form-group d-flex flex-column justify-content-between"
+                style={{
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                    background: 'white',
+                    borderRadius: '2rem',
+                    width: '370px'
+                }}
+            >
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder='Write Something...' style={{ background: 'transparent', border: 'none', padding: '1rem' }}></textarea>
+                <div className='d-flex justify-content-between align-items-center p-4'>
+                    <div
+                        className='d-flex justify-content-between align-items-center'
+                        style={{ width: '100px' }}
+                    >
+                        <img src={ImgiconImg} style={{ width: '20px' }} />
+                        <img src={naviconImg} style={{ width: '20px' }} />
+                        <img src={faceiconImg} style={{ width: '20px' }} />
+                    </div>
+                    <Button style={{
+                        background: '#93CCB5',
+                        border: "none",
+                        color: 'white',
+                        borderRadius: '2rem',
+                        boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                    }}>Post</Button>
+
+                </div>
+            </div>
+            {/* {children} */}
+        </div>
+    );
+
+    const MyCustomMarkerOne = () => (
+        <div
+            className='d-flex justify-content-center align-items-center'
+            style={{
+                background: '#f5d3a0',
+                borderRadius: '50%',
+                width: '40px',
+                left: '2px',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                height: '40px'
+            }}>
+            <img src={TwitterImg} style={{ width: '2rem' }} />
+            {/* <div
+            style={{
+                width : "100px",
+                height : '5px',
+                background : 'black'
+            }}
+            >
+
+            </div> */}
+        </div>
+    )
+
+    const MyCustomCardThree = ({ children }) => (
+        <div className='d-flex flex-column justify-content-center align-items-center'
+            style={{
+                padding: '0 4rem',
+            }}
+        >
+            <img src={instaImg}
+                style={{
+                    borderRadius: '2rem',
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+                }}
+            />
+            <div style={{
+                background: "#9e0277",
+                borderRadius: '2rem',
+                color: 'white',
+                width: '400px',
+                padding: '2rem',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+            }}>
+                <div
+                    style={{
+                        // background: "#f507aa",
+                        backgroundImage: `linear-gradient(to bottom, #f504be, #ff009b, #ff0078, #ff0057, #f61d38)`,
+                        borderRadius: '2rem',
+                        color: 'white',
+                        padding: '1rem'
+                    }}>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <img />
+                        <p style={{
+                            fontWeight: '500'
+                        }}>Tweeter feed</p>
+                    </div>
+                    <p style={{
+                        fontWeight: '200',
+                        fontStyle: 'italic',
+                        fontSize: '8px'
+                    }}>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since
+                    </p>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <p
+                            style={{
+                                fontWeight: '200',
+                                fontStyle: 'italic',
+                                fontSize: '8px'
+                            }}
+                        >27 Nov 2022</p>
+                        <p><HeartOutlined
+                            style={{
+                                transform: 'translateY(-2px)',
+                                marginRight: '5px'
+                            }}
+                        />75</p>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="form-group d-flex flex-column justify-content-between"
+                style={{
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                    background: 'white',
+                    borderRadius: '2rem',
+                    width: '370px'
+                }}
+            >
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder='Write Something...' style={{ background: 'transparent', border: 'none', padding: '1rem' }}></textarea>
+                <div className='d-flex justify-content-between align-items-center p-4'>
+                    <div
+                        className='d-flex justify-content-between align-items-center'
+                        style={{ width: '100px' }}
+                    >
+                        <img src={ImgiconImg} style={{ width: '20px' }} />
+                        <img src={naviconImg} style={{ width: '20px' }} />
+                        <img src={faceiconImg} style={{ width: '20px' }} />
+                    </div>
+                    <Button style={{
+                        background: '#93CCB5',
+                        border: "none",
+                        color: 'white',
+                        borderRadius: '2rem',
+                        boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                    }}>Post</Button>
+
+                </div>
+            </div>
+            {/* {children} */}
+        </div>
+    );
+
+    const MyCustomMarkerThree = () => (
+        <div
+            className='d-flex justify-content-center align-items-center'
+            style={{
+                background: '#eea48b',
+                borderRadius: '50%',
+                width: '40px',
+                left: '2px',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                height: '40px'
+            }}>
+            <img src={InstagramImg} style={{ width: '2rem' }} />
+            {/* <div
+            style={{
+                width : "100px",
+                height : '5px',
+                background : 'black'
+            }}
+            >
+
+            </div> */}
+        </div>
+    )
+
+    const MyCustomCardFour = ({ children }) => (
+        <div className='d-flex flex-column justify-content-center align-items-center'
+            style={{
+                padding: '0 4rem',
+            }}
+        >
+            <img src={instaImg}
+                style={{
+                    borderRadius: '2rem',
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+                }}
+            />
+            <div style={{
+                background: "#a52424",
+                borderRadius: '2rem',
+                color: 'white',
+                width: '400px',
+                padding: '2rem',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+            }}>
+                <div
+                    style={{
+                        background: "#ff0000",
+                        borderRadius: '2rem',
+                        color: 'white',
+                        padding: '1rem'
+                    }}>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <img />
+                        <p style={{
+                            fontWeight: '500'
+                        }}>Tweeter feed</p>
+                    </div>
+                    <p style={{
+                        fontWeight: '200',
+                        fontStyle: 'italic',
+                        fontSize: '8px'
+                    }}>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since
+                    </p>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <p
+                            style={{
+                                fontWeight: '200',
+                                fontStyle: 'italic',
+                                fontSize: '8px'
+                            }}
+                        >27 Nov 2022</p>
+                        <p><HeartOutlined
+                            style={{
+                                transform: 'translateY(-2px)',
+                                marginRight: '5px'
+                            }}
+                        />75</p>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="form-group d-flex flex-column justify-content-between"
+                style={{
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                    background: 'white',
+                    borderRadius: '2rem',
+                    width: '370px'
+                }}
+            >
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder='Write Something...' style={{ background: 'transparent', border: 'none', padding: '1rem' }}></textarea>
+                <div className='d-flex justify-content-between align-items-center p-4'>
+                    <div
+                        className='d-flex justify-content-between align-items-center'
+                        style={{ width: '100px' }}
+                    >
+                        <img src={ImgiconImg} style={{ width: '20px' }} />
+                        <img src={naviconImg} style={{ width: '20px' }} />
+                        <img src={faceiconImg} style={{ width: '20px' }} />
+                    </div>
+                    <Button style={{
+                        background: '#93CCB5',
+                        border: "none",
+                        color: 'white',
+                        borderRadius: '2rem',
+                        boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                    }}>Post</Button>
+
+                </div>
+            </div>
+            {/* {children} */}
+        </div>
+    );
+
+    const MyCustomMarkerFour = () => (
+        <div
+            className='d-flex justify-content-center align-items-center'
+            style={{
+                background: '#f5d08b',
+                borderRadius: '50%',
+                width: '40px',
+                left: '2px',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                height: '40px'
+            }}>
+            <img src={YouTubeImg} style={{ width: '2rem' }} />
+            {/* <div
+            style={{
+                width : "100px",
+                height : '5px',
+                background : 'black'
+            }}
+            >
+
+            </div> */}
+        </div>
+    )
+
+    const MyCustomCardFive = ({ children }) => (
+        <div className='d-flex flex-column justify-content-center align-items-center'
+            style={{
+                padding: '0 4rem',
+            }}
+        >
+            <img src={instaImg}
+                style={{
+                    borderRadius: '2rem',
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+                }}
+            />
+            <div style={{
+                background: "#7a1717",
+                borderRadius: '2rem',
+                width: '400px',
+                color: 'white',
+                padding: '2rem',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+            }}>
+                <div
+                    style={{
+                        background: "#b7071a",
+                        borderRadius: '2rem',
+                        color: 'white',
+                        padding: '1rem'
+                    }}>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <img />
+                        <p style={{
+                            fontWeight: '500'
+                        }}>Tweeter feed</p>
+                    </div>
+                    <p style={{
+                        fontWeight: '200',
+                        fontStyle: 'italic',
+                        fontSize: '8px'
+                    }}>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since
+                    </p>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <p
+                            style={{
+                                fontWeight: '200',
+                                fontStyle: 'italic',
+                                fontSize: '8px'
+                            }}
+                        >27 Nov 2022</p>
+                        <p><HeartOutlined
+                            style={{
+                                transform: 'translateY(-2px)',
+                                marginRight: '5px'
+                            }}
+                        />75</p>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="form-group d-flex flex-column justify-content-between"
+                style={{
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                    background: 'white',
+                    borderRadius: '2rem',
+                    width: '370px'
+                }}
+            >
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder='Write Something...' style={{ background: 'transparent', border: 'none', padding: '1rem' }}></textarea>
+                <div className='d-flex justify-content-between align-items-center p-4'>
+                    <div
+                        className='d-flex justify-content-between align-items-center'
+                        style={{ width: '100px' }}
+                    >
+                        <img src={ImgiconImg} style={{ width: '20px' }} />
+                        <img src={naviconImg} style={{ width: '20px' }} />
+                        <img src={faceiconImg} style={{ width: '20px' }} />
+                    </div>
+                    <Button style={{
+                        background: '#93CCB5',
+                        border: "none",
+                        color: 'white',
+                        borderRadius: '2rem',
+                        boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                    }}>Post</Button>
+
+                </div>
+            </div>
+            {/* {children} */}
+        </div>
+    );
+
+    const MyCustomMarkerFive = () => (
+        <div
+            className='d-flex justify-content-center align-items-center'
+            style={{
+                background: '#b898c0',
+                borderRadius: '50%',
+                width: '40px',
+                left: '2px',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                height: '40px'
+            }}>
+            <img src={PinterestImg} style={{ width: '2rem' }} />
+            {/* <div
+            style={{
+                width : "100px",
+                height : '5px',
+                background : 'black'
+            }}
+            >
+
+            </div> */}
+        </div>
+    )
+
+    const MyCustomCardSix = ({ children }) => (
+        <div className='d-flex flex-column justify-content-center align-items-center'
+            style={{
+                padding: '0 4rem',
+            }}
+        >
+            <img src={instaImg}
+                style={{
+                    borderRadius: '2rem',
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+                }}
+            />
+            <div style={{
+                background: "#2a6a83",
+                borderRadius: '2rem',
+                width: '400px',
+                color: 'white',
+                padding: '2rem',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+            }}>
+                <div
+                    style={{
+                        background: "#0077b5",
+                        borderRadius: '2rem',
+                        color: 'white',
+                        padding: '1rem'
+                    }}>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <img />
+                        <p style={{
+                            fontWeight: '500'
+                        }}>Tweeter feed</p>
+                    </div>
+                    <p style={{
+                        fontWeight: '200',
+                        fontStyle: 'italic',
+                        fontSize: '8px'
+                    }}>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since
+                    </p>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <p
+                            style={{
+                                fontWeight: '200',
+                                fontStyle: 'italic',
+                                fontSize: '8px'
+                            }}
+                        >27 Nov 2022</p>
+                        <p><HeartOutlined
+                            style={{
+                                transform: 'translateY(-2px)',
+                                marginRight: '5px'
+                            }}
+                        />75</p>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="form-group d-flex flex-column justify-content-between"
+                style={{
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                    background: 'white',
+                    borderRadius: '2rem',
+                    width: '370px'
+                }}
+            >
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder='Write Something...' style={{ background: 'transparent', border: 'none', padding: '1rem' }}></textarea>
+                <div className='d-flex justify-content-between align-items-center p-4'>
+                    <div
+                        className='d-flex justify-content-between align-items-center'
+                        style={{ width: '100px' }}
+                    >
+                        <img src={ImgiconImg} style={{ width: '20px' }} />
+                        <img src={naviconImg} style={{ width: '20px' }} />
+                        <img src={faceiconImg} style={{ width: '20px' }} />
+                    </div>
+                    <Button style={{
+                        background: '#93CCB5',
+                        border: "none",
+                        color: 'white',
+                        borderRadius: '2rem',
+                        boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                    }}>Post</Button>
+
+                </div>
+            </div>
+            {/* {children} */}
+        </div>
+    );
+
+    const MyCustomMarkerSix = () => (
+        <div
+            className='d-flex justify-content-center align-items-center'
+            style={{
+                background: '#92a8d1',
+                borderRadius: '50%',
+                width: '40px',
+                left: '2px',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                height: '40px'
+            }}>
+            <img src={LinkedInImg} style={{ width: '2rem' }} />
+            {/* <div
+            style={{
+                width : "100px",
+                height : '5px',
+                background : 'black'
+            }}
+            >
+
+            </div> */}
+        </div>
+    )
+
+    const MyCustomCardSeven = ({ children }) => (
+        <div className='d-flex flex-column justify-content-center align-items-center'
+            style={{
+                padding: '0 4rem',
+            }}
+        >
+            <img src={instaImg}
+                style={{
+                    borderRadius: '2rem',
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+                }}
+            />
+            <div style={{
+                background: "#6e9384",
+                borderRadius: '2rem',
+                width: '400px',
+                color: 'white',
+                padding: '2rem',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`
+            }}>
+                <div
+                    style={{
+                        background: "#93ccb5",
+                        borderRadius: '2rem',
+                        color: 'white',
+                        padding: '1rem'
+                    }}>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <img />
+                        <p style={{
+                            fontWeight: '500'
+                        }}>Tweeter feed</p>
+                    </div>
+                    <p style={{
+                        fontWeight: '200',
+                        fontStyle: 'italic',
+                        fontSize: '8px'
+                    }}>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since
+                    </p>
+                    <div
+                        className='d-flex justify-content-between'
+                    >
+                        <p
+                            style={{
+                                fontWeight: '200',
+                                fontStyle: 'italic',
+                                fontSize: '8px'
+                            }}
+                        >27 Nov 2022</p>
+                        <p><HeartOutlined
+                            style={{
+                                transform: 'translateY(-2px)',
+                                marginRight: '5px'
+                            }}
+                        />75</p>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="form-group d-flex flex-column justify-content-between"
+                style={{
+                    boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                    background: 'white',
+                    borderRadius: '2rem',
+                    width: '370px'
+                }}
+            >
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder='Write Something...' style={{ background: 'transparent', border: 'none', padding: '1rem' }}></textarea>
+                <div className='d-flex justify-content-between align-items-center p-4'>
+                    <div
+                        className='d-flex justify-content-between align-items-center'
+                        style={{ width: '100px' }}
+                    >
+                        <img src={ImgiconImg} style={{ width: '20px' }} />
+                        <img src={naviconImg} style={{ width: '20px' }} />
+                        <img src={faceiconImg} style={{ width: '20px' }} />
+                    </div>
+                    <Button style={{
+                        background: '#93CCB5',
+                        border: "none",
+                        color: 'white',
+                        borderRadius: '2rem',
+                        boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`
+                    }}>Post</Button>
+
+                </div>
+            </div>
+            {/* {children} */}
+        </div>
+    );
+
+    const MyCustomMarkerSeven = () => (
+        <div
+            className='d-flex justify-content-center align-items-center'
+            style={{
+                background: '#93ccb5',
+                borderRadius: '50%',
+                width: '40px',
+                left: '2px',
+                boxShadow: `rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px`,
+                height: '40px'
+            }}>
+            <img src={EllipseImg} style={{ width: '2rem' }} />
+            {/* <div
+            style={{
+                width : "100px",
+                height : '5px',
+                background : 'black'
+            }}
+            >
+
+            </div> */}
         </div>
     )
 
@@ -169,33 +935,38 @@ const Otherpost = () => {
 
                         <TextEvent
                             text="**Markdown** is *supported*"
-                            card={MyCustomCard}
-                            marker={MyCustomMarker}
+                            card={MyCustomCardOne}
+                            marker={MyCustomMarkerOne}
                         />
 
                         <TextEvent
                             text="**Markdown** is *supported*"
-                            card={MyCustomCard}
-                            marker={MyCustomMarker}
+                            card={MyCustomCardThree}
+                            marker={MyCustomMarkerThree}
                         />
 
-                        <ImageEvent
-                            text="You can embed images..."
-                            src="https://res.cloudinary.com/dovoq8jou/image/upload/v1564772194/jellyfish.jpg"
-                            alt="jellyfish swimming"
-                            credit="Photo by [@tavi004](https://unsplash.com/@tavi004)"
-                        >
-                            <div>
-                                <UrlButton href="https://unsplash.com/search/photos/undersea">
-                                    View more undersea photos
-                                </UrlButton>
-                            </div>
-                        </ImageEvent>
+                        <TextEvent
+                            text="**Markdown** is *supported*"
+                            card={MyCustomCardFour}
+                            marker={MyCustomMarkerFour}
+                        />
 
-                        <YouTubeEvent
-                            id="6UnRHtwHGSE"
-                            name="General Tso's Chicken recipe"
-                            text="... and YouTube videos!"
+                        <TextEvent
+                            text="**Markdown** is *supported*"
+                            card={MyCustomCardFive}
+                            marker={MyCustomMarkerFive}
+                        />
+
+                        <TextEvent
+                            text="**Markdown** is *supported*"
+                            card={MyCustomCardSix}
+                            marker={MyCustomMarkerSix}
+                        />
+
+                        <TextEvent
+                            text="**Markdown** is *supported*"
+                            card={MyCustomCardSeven}
+                            marker={MyCustomMarkerSeven}
                         />
                     </Events>
                 </Timeline>
